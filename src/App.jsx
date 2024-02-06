@@ -1,13 +1,14 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
-import "./App.css";
+
+import Header from "./components/header/Header";
 
 function App() {
   return (
-    <>
-      <h1 className="">Hello world!</h1>
-    </>
+    <div className="font-josefin min-h-screen bg-gray-50 ">
+      <Header />
+    </div>
   );
 }
 
