@@ -25,22 +25,25 @@ function Header() {
     <div className="flex flex-col justify-center lg:flex-row items-center pt-4">
       <span className="mb-8 md:mr-3 lg:mb-0 cursor-pointer">Home</span>
       <div className="w-full lg:w-[80%] xl:min-w-[59rem] xl:w-[60%] min-h-[5rem] rounded-[1.7rem] lg:border-[1px] border-gray-200 flex flex-col sm:flex-row gap-2 md:gap-5 items-center justify-between px-7">
-        <span className="w-[100%] flex justify-start gap-2 py-2">
+        <span className="w-[100%] sm:w-[50%] flex justify-start gap-2 py-2">
           <IoLocationSharp className="text-red-600 text-2xl" />
           <input
             type="text"
             name="location"
             placeholder="where to go?"
-            className="outline-none text-gray-500 bg-inherit"
+            className="sm:w-[5.5rem] md:w-[80%] lg:w-auto outline-none text-gray-500 bg-inherit"
           />
         </span>
         <span className={separatorCSS}></span>
         <span
           onClick={() => setOpenDate((prev) => !prev)}
-          className="relative w-[100%] sm:w-[50%] xl:w-full md:py-3 flex justify-start gap-2 py-2"
+          className="relative w-[100%] sm:text-sm lg:text-[1rem] xl:w-full md:py-3 flex justify-start gap-2 py-2"
         >
           <HiCalendar className={`text-blue-700 text-2xl`} />
-          <span onClick={() => setOpenDate((prev) => !prev)} className="">
+          <span
+            onClick={() => setOpenDate((prev) => !prev)}
+            className="cursor-pointer flex items-center"
+          >
             {`${format(date.startDate, "MM/dd/yy")} to ${format(
               date.endDate,
               "MM/dd/yy"
@@ -52,7 +55,7 @@ function Header() {
               onChange={(item) => setDate(item.selection)}
               minDate={new Date()}
               moveRangeOnFirstSelection={true}
-              className="absolute top-[4rem]"
+              className="absolute top-[4rem] text-sm"
             />
           )}
         </span>
