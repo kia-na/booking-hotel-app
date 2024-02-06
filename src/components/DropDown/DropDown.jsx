@@ -1,9 +1,17 @@
 /* eslint-disable react/prop-types */
 
-export default function DropDown({ data, setData }) {
-  console.log(data);
+import { useRef } from "react";
+import useOutsideClick from "./hooks/useOutsideClick";
+
+export default function DropDown({ data, setData, setOpenOption }) {
+  const optionRef = useRef();
+
+  useOutsideClick(optionRef, setOpenOption);
   return (
-    <div className="bg-gray-50 absolute w-[11rem] sm:w-[11.2rem] xl:w-[12.4rem] px-3 rounded-2xl shadow-dropdown top-8 lg:px-4">
+    <div
+      ref={optionRef}
+      className="bg-gray-50 absolute w-[11rem] sm:w-[11.2rem] xl:w-[12.4rem] px-3 rounded-2xl shadow-dropdown top-8 lg:px-4"
+    >
       <DropDownItem
         name="adult"
         maxCount={data.adult}
