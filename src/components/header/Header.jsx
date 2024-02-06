@@ -33,6 +33,7 @@ function Header() {
         <span className=" w-[100%] flex items-center justify-start sm:justify-center gap-3 xl:gap-5 text-sm xl:text-[1rem]">
           <span className="relative">
             <span
+              id="dropDown"
               className="cursor-pointer"
               onClick={() => setOpenOption((prev) => !prev)}
             >
@@ -43,7 +44,13 @@ function Header() {
               <span> {details.room} </span>
               room
             </span>
-            {openOption && <DropDown data={details} setData={setDetails} />}
+            {openOption && (
+              <DropDown
+                data={details}
+                setData={setDetails}
+                setOpenOption={setOpenOption}
+              />
+            )}
           </span>
           <span
             className={`bg-blue-700  p-2  rounded-[.7rem] md:px-3 md:py-[.71rem] md:rounded-2xl cursor-pointer hover:scale-110 transition-all`}
