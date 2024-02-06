@@ -3,13 +3,23 @@ import { IoLocationSharp } from "react-icons/io5";
 import { HiCalendar } from "react-icons/hi";
 import { IoSearch } from "react-icons/io5";
 import DropDown from "../DropDown/DropDown";
+import "react-date-range/dist/styles.css"; // main style file
+import "react-date-range/dist/theme/default.css"; // theme css file
+import { DateRange } from "react-date-range";
+import { format } from "date-fns";
 
 const separatorCSS = "hidden sm:inline border-l-[1px] h-[2rem] border-gray-400";
 
 function Header() {
   const [details, setDetails] = useState({ adult: 0, children: 0, room: 0 });
   const [openOption, setOpenOption] = useState(null);
-  const date = new Date().toLocaleDateString("en-US");
+  const [date, setDate] = useState({
+    startDate: new Date(),
+    endDate: new Date(),
+    key: "selection",
+  });
+
+  const [openDate, setOpenDate] = useState(false);
 
   return (
     <div className="flex flex-col justify-center lg:flex-row items-center pt-4">
@@ -25,9 +35,26 @@ function Header() {
           />
         </span>
         <span className={separatorCSS}></span>
-        <span className="w-[100%] sm:w-[50%] xl:w-full md:py-3 flex justify-start gap-2 py-2">
+        <span
+          onClick={() => setOpenDate((prev) => !prev)}
+          className="relative w-[100%] sm:w-[50%] xl:w-full md:py-3 flex justify-start gap-2 py-2"
+        >
           <HiCalendar className={`text-blue-700 text-2xl`} />
-          <span>{date}</span>
+          <span onClick={() => setOpenDate((prev) => !prev)} className="">
+            {`${format(date.startDate, "MM/dd/yy")} to ${format(
+              date.endDate,
+              "MM/dd/yy"
+            )}`}
+          </span>
+          {openDate && (
+            <DateRange
+              ranges={[date]}
+              onChange={(item) => setDate(item.selection)}
+              minDate={new Date()}
+              moveRangeOnFirstSelection={true}
+              className="absolute top-[4rem]"
+            />
+          )}
         </span>
         <span className={separatorCSS}></span>
         <span className=" w-[100%] flex items-center justify-start sm:justify-center gap-3 xl:gap-5 text-sm xl:text-[1rem]">
