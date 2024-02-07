@@ -1,9 +1,8 @@
 /* eslint-disable react/prop-types */
 function LocationCard(props) {
-  console.log(props);
   return (
     <div className="max-w-[20rem] min-w-[18.25rem] w-full h-[19rem] rounded-xl overflow-hidden m-1">
-      <span className="w-full h-[14rem] overflow-hidden block bg-red-600">
+      <span className="w-full h-[14rem] overflow-hidden block bg-slate-300">
         <img
           src={props.picture_url.url}
           alt={location.name}
