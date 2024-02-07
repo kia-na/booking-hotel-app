@@ -7,6 +7,12 @@ import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRange } from "react-date-range";
 import { format } from "date-fns";
+import {
+  createSearchParams,
+  useNavigate,
+  useSearchParams,
+} from "react-router-dom";
+import { data } from "autoprefixer";
 
 const separatorCSS = "hidden sm:inline border-l-[1px] h-[2rem] border-gray-400";
 
@@ -18,12 +24,34 @@ function Header() {
     endDate: new Date(),
     key: "selection",
   });
+  const [destination, setDestination] = useState("");
+  const [searchParams, setSearchParams] = useSearchParams();
+  const encodedParams = createSearchParams({
+    date: JSON.stringify(data),
+    destination,
+    option: JSON.stringify(details),
+  });
+
+  console.log(searchParams);
+  const navigate = useNavigate();
+  function handleSearch() {
+    console.log("first");
+    navigate({
+      pathname: "/hotels",
+      search: encodedParams.toString(),
+    });
+  }
 
   const [openDate, setOpenDate] = useState(false);
 
   return (
     <div className="flex flex-col justify-center lg:flex-row items-center pt-4">
-      <span className="mb-8 md:mr-3 lg:mb-0 cursor-pointer">Home</span>
+      <span
+        className="mb-8 md:mr-3 lg:mb-0 cursor-pointer"
+        onClick={() => navigate("/")}
+      >
+        Home
+      </span>
       <div className="w-full max-w-[64rem]  lg:w-[80%] xl:min-w-[59rem] xl:w-[60%] min-h-[5rem] rounded-[1.7rem] lg:border-[1px] border-gray-200 flex flex-col sm:flex-row gap-2 md:gap-5 items-center justify-between px-7">
         <span className="w-[100%] sm:w-[50%] flex justify-start gap-2 py-2">
           <IoLocationSharp className="text-red-600 text-2xl" />
@@ -32,6 +60,7 @@ function Header() {
             name="location"
             placeholder="where to go?"
             className="sm:w-[5.5rem] md:w-[80%] lg:w-auto outline-none text-gray-500 bg-inherit"
+            onChange={(e) => setDestination(e.target.value)}
           />
         </span>
         <span className={separatorCSS}></span>
@@ -85,7 +114,10 @@ function Header() {
           <span
             className={`bg-blue-700  p-2  rounded-[.7rem] md:px-3 md:py-[.71rem] md:rounded-2xl cursor-pointer hover:scale-110 transition-all`}
           >
-            <IoSearch className="text-white md:text-2xl" />
+            <IoSearch
+              className="text-white md:text-2xl"
+              onClick={handleSearch}
+            />
           </span>
         </span>
       </div>
