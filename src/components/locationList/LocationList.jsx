@@ -10,6 +10,7 @@ function LocationList() {
   // console.log(fff);
 
   if (isLoading) return <Loader />;
+
   return (
     <div className="max-w-[120rem] mx-auto">
       <span className="w-[80%] max-w-[84rem] mx-auto text-left mt-4 mb-2 block font-bold sm:text-xl lg:mt-6">
