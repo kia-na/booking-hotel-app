@@ -1,5 +1,4 @@
-import React from "react";
-import { useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import useFetch from "../../../utilities/useFetch/useFetch";
 import Loader from "../loader/Loader";
 
@@ -7,16 +6,55 @@ function Hotels() {
   const [searchParams, setSearchParams] = useSearchParams();
   const destination = searchParams.get("destination");
   const room = JSON.parse(searchParams.get("option"))?.room;
-  console.log(room);
+  console.log(destination);
+
+  // host_location_like=${destination || ""}&name_like=${destination || ""}
   const { data, isLoading } = useFetch(
-    `host_location_like=${destination || ""}&name_like=${
-      destination || ""
-    }&accommodates_gte=${room || 1}`
+    `host_location_like=${destination || ""}&accommodates_gte=${room || 1}`
   );
   console.log(data);
+  // const { data, isLoading } = useFetch(
+  //   `q=${destination || ""}&accommodates_gte=${room || 1}`
+  // );
+  // console.log(data);
 
   if (isLoading) return <Loader />;
-  return <div>Hotels</div>;
+  return (
+    <div>
+      <h2 className="font-bold md:text-xl lg:text-2xl lg:mb-5 mb-3">
+        Search Results ({data.length})
+      </h2>
+      <div className="flex flex-col gap-3">
+        {data.map((item) => (
+          <Link
+            key={item.id}
+            to={`/hotels/${item.id}?lat=${item.latitude}&lng=${item.longitude}`}
+            className="flex items-start justify-start gap-3"
+          >
+            <img
+              src={item.picture_url.url}
+              alt={item.name}
+              className="w-[5rem] h-[4.5rem] lg:w-[8rem] lg:h-[7rem] lg:rounded-[1.2rem] bg-slate-300 rounded-[.8rem]"
+            />
+            <div className="">
+              <span className="font-bold text-sm lg:text-[1.2rem]">
+                {item.smart_location}
+              </span>{" "}
+              <br />
+              <span className="text-xs lg:text-[1rem] text-slate-500">
+                {item.name}
+              </span>
+              <br />
+              <span className="text-xs lg:text-[1rem]">
+                <strong>€ ${item.price} </strong>
+                night
+              </span>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default Hotels;

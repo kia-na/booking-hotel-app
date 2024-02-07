@@ -24,8 +24,10 @@ function Header() {
     endDate: new Date(),
     key: "selection",
   });
-  const [destination, setDestination] = useState("");
   const [searchParams, setSearchParams] = useSearchParams();
+  const [destination, setDestination] = useState(
+    searchParams.get("destination" || "")
+  );
   const encodedParams = createSearchParams({
     date: JSON.stringify(data),
     destination,
