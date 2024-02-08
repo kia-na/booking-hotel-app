@@ -84,7 +84,7 @@ function Header() {
               onChange={(item) => setDate(item.selection)}
               minDate={new Date()}
               moveRangeOnFirstSelection={true}
-              className="absolute top-[4rem] text-sm"
+              className="absolute top-[4rem] text-sm z-[1000]"
             />
           )}
         </span>

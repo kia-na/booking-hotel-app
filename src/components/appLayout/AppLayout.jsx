@@ -7,7 +7,7 @@ function AppLayout() {
       <div className="w-1/2">
         <Outlet />
       </div>
-      <div className="w-1/2 bg-slate-300">
+      <div className="w-1/2 bg-slate-300 rounded-2xl">
         <Map />
       </div>
     </div>

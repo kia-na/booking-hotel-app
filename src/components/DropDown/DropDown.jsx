@@ -10,7 +10,7 @@ export default function DropDown({ data, setData, setOpenOption }) {
   return (
     <div
       ref={optionRef}
-      className="bg-gray-50 absolute w-[11rem] sm:w-[11.2rem] xl:w-[12.4rem] px-3 rounded-2xl shadow-dropdown top-8 lg:px-4"
+      className="bg-gray-50 absolute w-[11rem] sm:w-[11.2rem] xl:w-[12.4rem] px-3 rounded-2xl shadow-dropdown top-8 lg:px-4 z-[1000]"
     >
       <DropDownItem
         name="adult"
