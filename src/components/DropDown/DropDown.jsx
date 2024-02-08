@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import { useRef } from "react";
-import useOutsideClick from "./hooks/useOutsideClick";
+import useOutsideClick from "../../hooks/useOutsideClick";
 
 export default function DropDown({ data, setData, setOpenOption }) {
   const optionRef = useRef();
