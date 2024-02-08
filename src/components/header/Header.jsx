@@ -34,7 +34,6 @@ function Header() {
     option: JSON.stringify(details),
   });
 
-  console.log(searchParams);
   const navigate = useNavigate();
   function handleSearch() {
     console.log("first");
