@@ -113,12 +113,10 @@ function Header() {
             )}
           </span>
           <span
+            onClick={handleSearch}
             className={`bg-blue-700  p-2  rounded-[.7rem] md:px-3 md:py-[.71rem] md:rounded-2xl cursor-pointer hover:scale-110 transition-all`}
           >
-            <IoSearch
-              className="text-white md:text-2xl"
-              onClick={handleSearch}
-            />
+            <IoSearch className="text-white md:text-2xl" />
           </span>
         </span>
       </div>
