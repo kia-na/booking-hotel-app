@@ -17,7 +17,7 @@ import { data } from "autoprefixer";
 const separatorCSS = "hidden sm:inline border-l-[1px] h-[2rem] border-gray-400";
 
 function Header() {
-  const [details, setDetails] = useState({ adult: 0, children: 0, room: 0 });
+  const [details, setDetails] = useState({ adult: 0, children: 0, room: 1 });
   const [openOption, setOpenOption] = useState(null);
   const [date, setDate] = useState({
     startDate: new Date(),
@@ -36,7 +36,6 @@ function Header() {
 
   const navigate = useNavigate();
   function handleSearch() {
-    console.log("first");
     navigate({
       pathname: "/hotels",
       search: encodedParams.toString(),
@@ -55,7 +54,7 @@ function Header() {
       </span>
       <div className="w-full max-w-[64rem]  lg:w-[80%] xl:min-w-[59rem] xl:w-[60%] min-h-[5rem] rounded-[1.7rem] lg:border-[1px] border-gray-200 flex flex-col sm:flex-row gap-2 md:gap-5 items-center justify-between px-7">
         <span className="w-[100%] sm:w-[50%] flex justify-start gap-2 py-2">
-          <IoLocationSharp className="text-red-600 text-2xl" />
+          <IoLocationSharp className="text-red-600 text-3xl" />
           <input
             type="text"
             name="location"
@@ -69,7 +68,7 @@ function Header() {
           onClick={() => setOpenDate((prev) => !prev)}
           className="relative w-[100%] sm:text-sm lg:text-[1rem] xl:w-full md:py-3 flex justify-start gap-2 py-2"
         >
-          <HiCalendar className={`text-blue-700 text-2xl`} />
+          <HiCalendar className={`text-blue-700 text-[1.7rem]`} />
           <span
             onClick={() => setOpenDate((prev) => !prev)}
             className="cursor-pointer flex items-center"
@@ -85,7 +84,7 @@ function Header() {
               onChange={(item) => setDate(item.selection)}
               minDate={new Date()}
               moveRangeOnFirstSelection={true}
-              className="absolute top-[4rem] text-sm"
+              className="absolute top-[4rem] text-sm z-[1000]"
             />
           )}
         </span>
@@ -113,12 +112,10 @@ function Header() {
             )}
           </span>
           <span
+            onClick={handleSearch}
             className={`bg-blue-700  p-2  rounded-[.7rem] md:px-3 md:py-[.71rem] md:rounded-2xl cursor-pointer hover:scale-110 transition-all`}
           >
-            <IoSearch
-              className="text-white md:text-2xl"
-              onClick={handleSearch}
-            />
+            <IoSearch className="text-white md:text-2xl" />
           </span>
         </span>
       </div>

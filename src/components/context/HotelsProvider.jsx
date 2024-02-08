@@ -10,7 +10,10 @@ function HotelsProvider({ children }) {
   const room = JSON.parse(searchParams.get("option"))?.room;
 
   // host_location_like=${destination || ""}&name_like=${destination || ""}
-  const { data, isLoading } = useFetch(`accommodates_gte=${room || 1}`);
+  const { data, isLoading } = useFetch(
+    "http://localhost:3000/hotels",
+    `accommodates_gte=${room || 1}`
+  );
 
   return (
     <hotelsContext.Provider value={{ data, isLoading }}>
