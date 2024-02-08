@@ -2,7 +2,10 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
 
-export default function useFetch(query = "") {
+export default function useFetch(
+  url = "http://localhost:3000/hotels",
+  query = ""
+) {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -10,14 +13,10 @@ export default function useFetch(query = "") {
     async function fetchData() {
       try {
         setIsLoading(true);
-        const { data } = await axios.get(
-          `http://localhost:3000/hotels?${query}`
-        );
-        console.log(data);
+        const { data } = await axios.get(`${url}?${query}`);
         setData(data);
       } catch (error) {
         setData([]);
-        // console.log(error);
         toast.error(error?.message);
       } finally {
         setIsLoading(false);

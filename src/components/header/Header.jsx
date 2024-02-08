@@ -36,7 +36,6 @@ function Header() {
 
   const navigate = useNavigate();
   function handleSearch() {
-    console.log("first");
     navigate({
       pathname: "/hotels",
       search: encodedParams.toString(),

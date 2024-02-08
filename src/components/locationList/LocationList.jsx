@@ -4,9 +4,7 @@ import useFetch from "../../../utilities/useFetch/useFetch";
 import Loader from "../loader/Loader";
 
 function LocationList() {
-  const { data, isLoading } = useFetch("");
-  console.log(data, isLoading);
-  // console.log(fff);
+  const { data, isLoading } = useFetch();
 
   if (isLoading) return <Loader />;
 
