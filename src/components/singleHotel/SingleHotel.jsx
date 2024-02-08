@@ -1,4 +1,3 @@
-import React from "react";
 import useFetch from "../../../utilities/useFetch/useFetch";
 import { useParams } from "react-router-dom";
 import Loader from "../loader/Loader";

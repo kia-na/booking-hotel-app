@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function useGeoLocation() {
   const [isGeoLoading, setIsGeoLoading] = useState(false);

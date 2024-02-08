@@ -24,7 +24,7 @@ function Header() {
     endDate: new Date(),
     key: "selection",
   });
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const [destination, setDestination] = useState(
     searchParams.get("destination" || "")
   );

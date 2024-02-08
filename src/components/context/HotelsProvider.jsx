@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { createContext, useContext } from "react";
 import useFetch from "../../../utilities/useFetch/useFetch";
 import { useSearchParams } from "react-router-dom";
@@ -5,8 +6,8 @@ import { useSearchParams } from "react-router-dom";
 const hotelsContext = createContext();
 
 function HotelsProvider({ children }) {
-  const [searchParams, setSearchParams] = useSearchParams();
-  const destination = searchParams.get("destination");
+  const [searchParams] = useSearchParams();
+  // const destination = searchParams.get("destination");
   const room = JSON.parse(searchParams.get("option"))?.room;
 
   // host_location_like=${destination || ""}&name_like=${destination || ""}
