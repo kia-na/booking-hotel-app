@@ -1,14 +1,20 @@
+/* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
-import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
-import { useHotels } from "../context/HotelsProvider";
-import { useSearchParams } from "react-router-dom";
+import {
+  MapContainer,
+  Marker,
+  Popup,
+  TileLayer,
+  useMap,
+  useMapEvents,
+} from "react-leaflet";
+
+import { useNavigate, useSearchParams } from "react-router-dom";
 import useGeoLocation from "../../hooks/useGeoLocation";
 
-import Loader from "../loader/Loader";
-
-function Map() {
+function Map({ locationsMark = [] }) {
   const [mapCenter, setMapCenter] = useState([51.505, -0.09]);
-  const { data, loading } = useHotels();
+
   const [searchParams] = useSearchParams();
   const lat = searchParams.get("lat");
   const lng = searchParams.get("lng");
@@ -25,12 +31,8 @@ function Map() {
     }
   }, [geoPosition]);
 
-  if (loading) {
-    <Loader />;
-  }
-
   return (
-    <div className="h-full border-blue-600 border-[2px] shadow-blueShadow rounded-2xl overflow-hidden">
+    <div className="h-full border-blue-600   overflow-hidden">
       <MapContainer
         center={mapCenter}
         zoom={13}
@@ -47,8 +49,9 @@ function Map() {
         >
           {isGeoLoading ? "Loading..." : "Use Your Location"}
         </button>
+        <DetectClick />
         <ChangeCenter position={mapCenter} />
-        {data.map((item) => (
+        {locationsMark.map((item) => (
           <Marker key={item.id} position={[item.latitude, item.longitude]}>
             <Popup>{item.host_location}</Popup>
           </Marker>
@@ -63,4 +66,12 @@ export default Map;
 function ChangeCenter({ position }) {
   const map = useMap();
   map.setView(position);
+}
+
+function DetectClick() {
+  const navigate = useNavigate();
+  useMapEvents({
+    click: (e) =>
+      navigate(`/bookmarks?lat=${e.latlng.lat}&lng=${e.latlng.lng}`),
+  });
 }
