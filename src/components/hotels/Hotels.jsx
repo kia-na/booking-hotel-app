@@ -3,21 +3,23 @@ import Loader from "../loader/Loader";
 import { useHotels } from "../context/HotelsProvider";
 
 function Hotels() {
-  const { data, isLoading } = useHotels();
+  const { data, isLoading, currentHotelData } = useHotels();
 
   if (isLoading) return <Loader />;
   return (
     <div className=" h-[49.99rem]">
-      <h2 className="font-bold md:text-xl lg:text-2xl lg:mb-5 mb-3">
+      <h2 className="font-bold md:text-xl lg:text-2xl lg:mb-3 mb-3">
         Search Results ({data.length})
       </h2>
       <div className="overflow-y-scroll h-[46.8rem]">
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 mt-3 mb-3">
           {data.map((item) => (
             <Link
               key={item.id}
               to={`/hotels/${item.id}?lat=${item.latitude}&lng=${item.longitude}`}
-              className="flex items-start justify-start gap-3"
+              className={`flex items-start mx-2 justify-start gap-3 border-slate-700 rounded-3xl ${
+                currentHotelData?.id === item.id ? "shadow-blueShadowSm " : ""
+              }`}
             >
               <img
                 src={item.picture_url.url}
