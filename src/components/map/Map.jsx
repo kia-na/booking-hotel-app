@@ -3,12 +3,13 @@ import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
 import { useHotels } from "../context/HotelsProvider";
 import { useSearchParams } from "react-router-dom";
 import useGeoLocation from "../../hooks/useGeoLocation";
-import toast from "react-hot-toast";
+
+import Loader from "../loader/Loader";
 
 function Map() {
   const [mapCenter, setMapCenter] = useState([51.505, -0.09]);
   const { data, loading } = useHotels();
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const lat = searchParams.get("lat");
   const lng = searchParams.get("lng");
 
@@ -23,6 +24,10 @@ function Map() {
       setMapCenter([geoPosition.lat, geoPosition.lng]);
     }
   }, [geoPosition]);
+
+  if (loading) {
+    <Loader />;
+  }
 
   return (
     <div className="h-full border-blue-600 border-[2px] shadow-blueShadow rounded-2xl overflow-hidden">
