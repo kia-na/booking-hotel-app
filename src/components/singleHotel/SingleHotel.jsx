@@ -16,9 +16,9 @@ function SingleHotel() {
   if (isLoadingCurrHotel || !currentHotelData) return <Loader />;
   return (
     <div className="flex flex-col items-center justify-center lg:block">
-      <h2 className="font-bold ">{currentHotelData?.name}</h2>
-      <div className="mb-2 text-slate-600">
-        {currentHotelData.number_of_reviews} reviews &bull;{" "}
+      <h2 className="">{currentHotelData?.name}</h2>
+      <div className="mb-2 text-slate-400">
+        {currentHotelData.number_of_reviews} reviews &bull;
         {currentHotelData?.smart_location}
       </div>
       <img

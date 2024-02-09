@@ -27,16 +27,16 @@ function Hotels() {
                 className="w-[5rem] h-[4.5rem] lg:w-[8rem] lg:h-[7rem] lg:rounded-[1.2rem] bg-slate-300 rounded-[.8rem]"
               />
               <div className="">
-                <span className="font-bold text-sm lg:text-[1.2rem]">
+                <span className="text-gray-500 text-sm lg:text-[1.1rem]">
                   {item.smart_location}
                 </span>
                 <br />
-                <span className="text-xs lg:text-[1rem] text-slate-500">
+                <span className="text-xs lg:text-[.9rem] text-slate-400">
                   {item.name}
                 </span>
                 <br />
-                <span className="text-xs lg:text-[1rem]">
-                  <strong>€ ${item.price} </strong>
+                <span className="text-xs text-slate-600 lg:text-[1rem]">
+                  € ${item.price}
                   night
                 </span>
               </div>
