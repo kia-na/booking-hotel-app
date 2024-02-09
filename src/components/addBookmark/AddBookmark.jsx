@@ -1,3 +1,5 @@
+import ReactCountryFlag from "react-country-flag";
+
 function AddBookmark() {
   return (
     <div>
@@ -11,6 +13,7 @@ function AddBookmark() {
           defaultValue={"h"}
           className="bg-inherit w-full py-1 px-2 font-extralight text-slate-600 outline-none rounded-lg border-[1px] border-slate-600"
         />
+        <ReactCountryFlag svg countryCode="US" />
       </div>
       <div className="flex flex-col items-start justify-between gap-1">
         <span className="font-extralight">Country</span>
