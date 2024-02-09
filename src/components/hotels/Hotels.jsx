@@ -36,8 +36,7 @@ function Hotels() {
                 </span>
                 <br />
                 <span className="text-xs text-slate-600 lg:text-[1rem]">
-                  € ${item.price}
-                  night
+                  € ${item.price} night
                 </span>
               </div>
             </Link>
