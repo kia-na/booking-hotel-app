@@ -26,7 +26,7 @@ function SingleBookmark() {
       </span>
       <span className="font-bold lg:text-2xl">{currBookmark.cityName}</span>
       <div className="relative min-h-[3.5rem] flex items-center justify-between gap-2 border-[1px] border-slate-500 rounded-[1rem] py-4 px-3">
-        <ReactCountryFlag svg countryCode={currBookmark.countryCode} />
+        <ReactCountryFlag svg countryCode={currBookmark.countryCode || ""} />
         <span className="font-bold">{currBookmark.cityName}</span>
         <span className="font-extralight">{currBookmark.country}</span>
       </div>

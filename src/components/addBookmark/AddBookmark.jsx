@@ -9,7 +9,6 @@ const REVERSE_GEAOCODE_URL =
   "https://api.bigdatacloud.net/data/reverse-geocode-client";
 
 function AddBookmark() {
-  const [location, setLocation] = useState({});
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
   const [searchParams] = useSearchParams();
@@ -28,7 +27,6 @@ function AddBookmark() {
         const { data } = await axios.get(
           `${REVERSE_GEAOCODE_URL}?latitude=${lat}&longitude=${lng}`
         );
-        console.log(data);
         if (!data.countryCode) {
           throw new Error(
             "This location is NOT a city please select somewhere else!"
