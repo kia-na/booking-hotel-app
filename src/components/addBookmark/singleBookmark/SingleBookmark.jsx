@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useBookmark } from "../../context/BookmarkContext";
 import { useNavigate, useParams } from "react-router-dom";
 import ReactCountryFlag from "react-country-flag";
+import Loader from "../../loader/Loader";
 
 function SingleBookmark() {
-  const { getCurrBookmark, currBookmark } = useBookmark();
+  const { getCurrBookmark, currBookmark, isLoading } = useBookmark();
   const navigate = useNavigate();
 
   const { id } = useParams();
@@ -13,7 +14,7 @@ function SingleBookmark() {
     getCurrBookmark(id);
   }, []);
 
-  console.log(currBookmark);
+  if (isLoading) return <Loader />;
 
   return (
     <div className="flex flex-col gap-4">
