@@ -1397,15 +1397,6 @@
       "host_location": "London United Kingdom of Great Britain and Northern Ireland (the)"
     },
     {
-      "id": "6774",
-      "cityName": "Dumfries",
-      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
-      "countryCode": "GB",
-      "latitude": "55.10351605801967",
-      "longitude": "-4.154076404518708",
-      "host_location": "Dumfries United Kingdom of Great Britain and Northern Ireland (the)"
-    },
-    {
       "id": "cebd",
       "cityName": "Hamilton",
       "country": "United Kingdom of Great Britain and Northern Ireland (the)",
@@ -1433,15 +1424,6 @@
       "host_location": "Oualata Mauritania"
     },
     {
-      "id": "b944",
-      "cityName": "London",
-      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
-      "countryCode": "GB",
-      "latitude": "51.52423180191153",
-      "longitude": "-0.12017511594988763",
-      "host_location": "London United Kingdom of Great Britain and Northern Ireland (the)"
-    },
-    {
       "id": "e982",
       "cityName": "Polstal",
       "country": "Austria",
@@ -1449,6 +1431,87 @@
       "latitude": "47.39834920035926",
       "longitude": "14.34222023242729",
       "host_location": "Polstal Austria"
+    },
+    {
+      "id": "2a61",
+      "cityName": "Madrid",
+      "country": "Spain",
+      "countryCode": "ES",
+      "latitude": "40.42368991675518",
+      "longitude": "-3.7008657481862",
+      "host_location": "Madrid Spain"
+    },
+    {
+      "id": "a8c4",
+      "cityName": "London",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "countryCode": "GB",
+      "latitude": "51.52807661572529",
+      "longitude": "-0.13407540783657357",
+      "host_location": "London United Kingdom of Great Britain and Northern Ireland (the)"
+    },
+    {
+      "id": "15f4",
+      "cityName": "Hemsedal",
+      "country": "Norway",
+      "countryCode": "NO",
+      "latitude": "60.930432202923335",
+      "longitude": "8.609656336565102",
+      "host_location": "Hemsedal Norway"
+    },
+    {
+      "id": "0358",
+      "cityName": "Vestre Slidre",
+      "country": "Norway",
+      "countryCode": "NO",
+      "latitude": "61.05828537037916",
+      "longitude": "9.056575701177307",
+      "host_location": "Vestre Slidre Norway"
+    },
+    {
+      "id": "1eeb",
+      "cityName": "Bulgakovo",
+      "country": "Russian Federation (the)",
+      "countryCode": "RU",
+      "latitude": "52.908902047770255",
+      "longitude": "42.52023459141275",
+      "host_location": "Bulgakovo Russian Federation (the)"
+    },
+    {
+      "id": "0ba0",
+      "cityName": "Gulsehir",
+      "country": "Turkiye",
+      "countryCode": "TR",
+      "latitude": "38.77121637244273",
+      "longitude": "34.71604619329989",
+      "host_location": "Gulsehir Turkiye"
+    },
+    {
+      "id": "a0d2",
+      "cityName": "Altinekin",
+      "country": "Turkiye",
+      "countryCode": "TR",
+      "latitude": "38.28993659801203",
+      "longitude": "32.890881990131575",
+      "host_location": "Altinekin Turkiye"
+    },
+    {
+      "id": "d141",
+      "cityName": "Tadmur",
+      "country": "Syrian Arab Republic (the)",
+      "countryCode": "SY",
+      "latitude": "34.452218472826566",
+      "longitude": "38.843077767918984",
+      "host_location": "Tadmur Syrian Arab Republic (the)"
+    },
+    {
+      "id": "d28b",
+      "cityName": "London",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "countryCode": "GB",
+      "latitude": "51.52604744889203",
+      "longitude": "-0.1268678490805253",
+      "host_location": "London United Kingdom of Great Britain and Northern Ireland (the)"
     }
   ]
 }

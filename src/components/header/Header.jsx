@@ -47,7 +47,7 @@ function Header() {
   return (
     <div className="flex flex-col justify-center lg:flex-row items-center pt-4">
       <span
-        className="mb-8 md:mr-3 lg:mb-0 cursor-pointer"
+        className="mb-8 md:mr-3 lg:mb-0 cursor-pointer "
         onClick={() => navigate("/")}
       >
         Home
@@ -59,7 +59,7 @@ function Header() {
             type="text"
             name="location"
             placeholder="where to go?"
-            className="sm:w-[5.5rem] md:w-[80%] lg:w-auto outline-none text-gray-500 bg-inherit"
+            className="sm:w-[5.5rem] md:w-[80%] lg:w-auto outline-none placeholder:text-slate-600 text-slate-600 bg-inherit font-extralight"
             onChange={(e) => setDestination(e.target.value)}
           />
         </span>
@@ -71,7 +71,7 @@ function Header() {
           <HiCalendar className={`text-blue-700 text-[1.7rem]`} />
           <span
             onClick={() => setOpenDate((prev) => !prev)}
-            className="cursor-pointer flex items-center"
+            className="cursor-pointer flex items-center font-extralight text-sm"
           >
             {`${format(date.startDate, "MM/dd/yy")} to ${format(
               date.endDate,
@@ -89,7 +89,7 @@ function Header() {
           )}
         </span>
         <span className={separatorCSS}></span>
-        <span className=" w-[100%] flex items-center justify-start sm:justify-center gap-3 xl:gap-5 text-sm xl:text-[1rem]">
+        <span className="w-[100%] flex items-center justify-start sm:justify-center gap-3 xl:gap-5 text-sm xl:text-[1rem] font-extralight">
           <span className="relative">
             <span
               id="dropDown"
