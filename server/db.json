@@ -1370,49 +1370,85 @@
       "id": "8"
     },
     {
-      "id": "72aa",
-      "cityName": "",
-      "country": "",
-      "countryCode": "GB",
-      "latitude": "51.57685617489446",
-      "longitude": "-0.1632622800705508",
-      "host_location": " "
+      "id": "77e3",
+      "cityName": "Malaya Zorkal’tseva",
+      "country": "Russian Federation (the)",
+      "countryCode": "RU",
+      "latitude": "58.44773280389084",
+      "longitude": "68.83515841412742",
+      "host_location": "Malaya Zorkal’tseva Russian Federation (the)"
     },
     {
-      "id": "80f4",
-      "cityName": "",
-      "country": "",
-      "countryCode": "GB",
-      "latitude": "51.57685617489446",
-      "longitude": "-0.1632622800705508",
-      "host_location": " "
+      "id": "7025",
+      "cityName": "Foggaret Ezzaou",
+      "country": "Algeria",
+      "countryCode": "DZ",
+      "latitude": "26.980828590472107",
+      "longitude": "4.1191730869113705",
+      "host_location": "Foggaret Ezzaou Algeria"
     },
     {
-      "id": "35c6",
-      "cityName": "",
-      "country": "",
+      "id": "3ce1",
+      "cityName": "London",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
       "countryCode": "GB",
-      "latitude": "51.52743583596879",
-      "longitude": "-0.1103934290666664",
-      "host_location": " "
+      "latitude": "51.52391138610547",
+      "longitude": "-0.12875554304043083",
+      "host_location": "London United Kingdom of Great Britain and Northern Ireland (the)"
     },
     {
-      "id": "1024",
-      "cityName": "",
-      "country": "",
+      "id": "6774",
+      "cityName": "Dumfries",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
       "countryCode": "GB",
-      "latitude": "51.52743583596879",
-      "longitude": "-0.1103934290666664",
-      "host_location": " "
+      "latitude": "55.10351605801967",
+      "longitude": "-4.154076404518708",
+      "host_location": "Dumfries United Kingdom of Great Britain and Northern Ireland (the)"
     },
     {
-      "id": "077f",
-      "cityName": "",
-      "country": "",
+      "id": "cebd",
+      "cityName": "Hamilton",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
       "countryCode": "GB",
-      "latitude": "51.52871738646354",
-      "longitude": "-0.11571329386280917",
-      "host_location": " "
+      "latitude": "55.727110085045986",
+      "longitude": "-3.673552198753465",
+      "host_location": "Hamilton United Kingdom of Great Britain and Northern Ireland (the)"
+    },
+    {
+      "id": "dd1c",
+      "cityName": "Orekhovo-Zuyevo",
+      "country": "Russian Federation (the)",
+      "countryCode": "RU",
+      "latitude": "55.62799595426723",
+      "longitude": "39.08936223164821",
+      "host_location": "Orekhovo-Zuyevo Russian Federation (the)"
+    },
+    {
+      "id": "697d",
+      "cityName": "Oualata",
+      "country": "Mauritania",
+      "countryCode": "MR",
+      "latitude": "19.228176737766262",
+      "longitude": "-7.741841239612185",
+      "host_location": "Oualata Mauritania"
+    },
+    {
+      "id": "b944",
+      "cityName": "London",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "countryCode": "GB",
+      "latitude": "51.52423180191153",
+      "longitude": "-0.12017511594988763",
+      "host_location": "London United Kingdom of Great Britain and Northern Ireland (the)"
+    },
+    {
+      "id": "e982",
+      "cityName": "Polstal",
+      "country": "Austria",
+      "countryCode": "AT",
+      "latitude": "47.39834920035926",
+      "longitude": "14.34222023242729",
+      "host_location": "Polstal Austria"
     }
   ]
 }
