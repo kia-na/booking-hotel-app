@@ -1397,15 +1397,6 @@
       "host_location": "Hamilton United Kingdom of Great Britain and Northern Ireland (the)"
     },
     {
-      "id": "dd1c",
-      "cityName": "Orekhovo-Zuyevo",
-      "country": "Russian Federation (the)",
-      "countryCode": "RU",
-      "latitude": "55.62799595426723",
-      "longitude": "39.08936223164821",
-      "host_location": "Orekhovo-Zuyevo Russian Federation (the)"
-    },
-    {
       "id": "697d",
       "cityName": "Oualata",
       "country": "Mauritania",
@@ -1413,51 +1404,6 @@
       "latitude": "19.228176737766262",
       "longitude": "-7.741841239612185",
       "host_location": "Oualata Mauritania"
-    },
-    {
-      "id": "e982",
-      "cityName": "Polstal",
-      "country": "Austria",
-      "countryCode": "AT",
-      "latitude": "47.39834920035926",
-      "longitude": "14.34222023242729",
-      "host_location": "Polstal Austria"
-    },
-    {
-      "id": "2a61",
-      "cityName": "Madrid",
-      "country": "Spain",
-      "countryCode": "ES",
-      "latitude": "40.42368991675518",
-      "longitude": "-3.7008657481862",
-      "host_location": "Madrid Spain"
-    },
-    {
-      "id": "15f4",
-      "cityName": "Hemsedal",
-      "country": "Norway",
-      "countryCode": "NO",
-      "latitude": "60.930432202923335",
-      "longitude": "8.609656336565102",
-      "host_location": "Hemsedal Norway"
-    },
-    {
-      "id": "0358",
-      "cityName": "Vestre Slidre",
-      "country": "Norway",
-      "countryCode": "NO",
-      "latitude": "61.05828537037916",
-      "longitude": "9.056575701177307",
-      "host_location": "Vestre Slidre Norway"
-    },
-    {
-      "id": "1eeb",
-      "cityName": "Bulgakovo",
-      "country": "Russian Federation (the)",
-      "countryCode": "RU",
-      "latitude": "52.908902047770255",
-      "longitude": "42.52023459141275",
-      "host_location": "Bulgakovo Russian Federation (the)"
     },
     {
       "id": "a0d2",
@@ -1469,33 +1415,6 @@
       "host_location": "Altinekin Turkiye"
     },
     {
-      "id": "d141",
-      "cityName": "Tadmur",
-      "country": "Syrian Arab Republic (the)",
-      "countryCode": "SY",
-      "latitude": "34.452218472826566",
-      "longitude": "38.843077767918984",
-      "host_location": "Tadmur Syrian Arab Republic (the)"
-    },
-    {
-      "id": "d28b",
-      "cityName": "London",
-      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
-      "countryCode": "GB",
-      "latitude": "51.52604744889203",
-      "longitude": "-0.1268678490805253",
-      "host_location": "London United Kingdom of Great Britain and Northern Ireland (the)"
-    },
-    {
-      "id": "fcc1",
-      "cityName": "London",
-      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
-      "countryCode": "GB",
-      "latitude": "51.52337735475174",
-      "longitude": "-0.14042492388357755",
-      "host_location": "London United Kingdom of Great Britain and Northern Ireland (the)"
-    },
-    {
       "id": "821b",
       "cityName": "Inari",
       "country": "Finland",
@@ -1505,15 +1424,6 @@
       "host_location": "Inari Finland"
     },
     {
-      "id": "5651",
-      "cityName": "Amsterdam",
-      "country": "Netherlands (Kingdom of the)",
-      "countryCode": "NL",
-      "latitude": "52.37895253000267",
-      "longitude": "4.856113370435718",
-      "host_location": "Amsterdam Netherlands (Kingdom of the)"
-    },
-    {
       "id": "ee8e",
       "cityName": "Amsterdam",
       "country": "Netherlands (Kingdom of the)",
@@ -1521,6 +1431,15 @@
       "latitude": "52.365622755005454",
       "longitude": "4.875574176331324",
       "host_location": "Amsterdam Netherlands (Kingdom of the)"
+    },
+    {
+      "id": "a504",
+      "cityName": "London",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "countryCode": "GB",
+      "latitude": "51.529998900885644",
+      "longitude": "-0.11639972803005662",
+      "host_location": "London United Kingdom of Great Britain and Northern Ireland (the)"
     }
   ]
 }

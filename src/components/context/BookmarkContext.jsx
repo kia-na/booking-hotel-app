@@ -1,6 +1,6 @@
+/* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/prop-types */
 import axios from "axios";
-
 import { createContext, useContext, useEffect, useState } from "react";
 
 const BASE_URL = "http://localhost:3000/bookmarks";
@@ -15,7 +15,7 @@ export default function BookmarksProvider({ children }) {
       setIsLoading(true);
       try {
         const { data } = await axios.get(BASE_URL);
-        console.log(data);
+        // console.log(data);
         setBookmarksData(data);
         setIsLoading(false);
       } catch (error) {
