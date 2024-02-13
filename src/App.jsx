@@ -8,13 +8,7 @@ import HotelsProvider from "./components/context/HotelsProvider";
 import BookmarkLayout from "./components/bookmarkLayout/BookmarkLayout";
 import AddBookmark from "./components/addBookmark/AddBookmark";
 import BookmarkList from "./components/bookmarkList/BookmarkList";
-<<<<<<< HEAD
 import Login from "./components/login/Login";
-=======
-import Bookmarks from "./components/addBookmark/singleBookmark/SingleBookmark";
-import BookmarksProvider from "./components/context/BookmarkContext";
-import SingleBookmark from "./components/addBookmark/singleBookmark/SingleBookmark";
->>>>>>> b6e470a30fa44e8c513a91708cb73db07ee60cbe
 
 function App() {
   return (

@@ -47,15 +47,9 @@ function Header() {
 
   return (
     <div className="flex flex-col justify-center lg:flex-row items-center pt-4">
-<<<<<<< HEAD
       <Link
         to={"/bookmarks"}
         className="mb-8 md:mr-3 lg:mb-0 cursor-pointer hover:text-blue-800 hover:scale-110 transition-all duration-200"
-=======
-      <span
-        className="mb-8 md:mr-3 lg:mb-0 cursor-pointer "
-        onClick={() => navigate("/")}
->>>>>>> b6e470a30fa44e8c513a91708cb73db07ee60cbe
       >
         Bookmarks
       </Link>
