@@ -5,6 +5,8 @@ import { useSearchParams } from "react-router-dom";
 import toast from "react-hot-toast";
 import axios from "axios";
 
+const BASE_URL = "http://localhost:3000/hotels/";
+
 const hotelsContext = createContext();
 
 function HotelsProvider({ children }) {
@@ -14,7 +16,7 @@ function HotelsProvider({ children }) {
 
   // host_location_like=${destination || ""}&name_like=${destination || ""}
   const { data, isLoading } = useFetch(
-    "http://localhost:3000/hotels",
+    BASE_URL,
     `accommodates_gte=${room || 1}`
   );
 
@@ -25,7 +27,7 @@ function HotelsProvider({ children }) {
   async function getCurrentHotel(id) {
     setIsLoadingCurrHotel(true);
     try {
-      const { data } = await axios.get(`http://localhost:3000/hotels/${id}`);
+      const { data } = await axios.get(`${BASE_URL}${id}`);
       setCurrHotelDataData(data);
       setIsLoadingCurrHotel(false);
     } catch (error) {

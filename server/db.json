@@ -49,7 +49,12 @@
       "host_neighbourhood": null,
       "host_listings_count": 1,
       "host_total_listings_count": 1,
-      "host_verifications": ["email", "phone", "facebook", "reviews"],
+      "host_verifications": [
+        "email",
+        "phone",
+        "facebook",
+        "reviews"
+      ],
       "street": "Amsterdam, Noord-Holland 1054, Netherlands",
       "neighbourhood": null,
       "neighbourhood_cleansed": "De Baarsjes - Oud-West",
@@ -114,7 +119,9 @@
         "lon": 2.35,
         "lat": 48.86
       },
-      "features": ["Host Has Profile Pic"]
+      "features": [
+        "Host Has Profile Pic"
+      ]
     },
     {
       "id": "9192415",
@@ -305,7 +312,11 @@
       "host_neighbourhood": "Oud-West",
       "host_listings_count": 3,
       "host_total_listings_count": 3,
-      "host_verifications": ["email", "phone", "reviews"],
+      "host_verifications": [
+        "email",
+        "phone",
+        "reviews"
+      ],
       "street": "Oud-West, Amsterdam, North Holland 1054, Netherlands",
       "neighbourhood": "Oud-West",
       "neighbourhood_cleansed": "De Baarsjes - Oud-West",
@@ -374,7 +385,10 @@
         "lon": 4.875639539930118,
         "lat": 52.36456756846072
       },
-      "features": ["Host Has Profile Pic", "Is Location Exact"]
+      "features": [
+        "Host Has Profile Pic",
+        "Is Location Exact"
+      ]
     },
     {
       "id": "13153299",
@@ -695,7 +709,10 @@
       "host_neighbourhood": null,
       "host_listings_count": 1,
       "host_total_listings_count": 1,
-      "host_verifications": ["email", "reviews"],
+      "host_verifications": [
+        "email",
+        "reviews"
+      ],
       "street": "Amsterdam, North Holland, Netherlands",
       "neighbourhood": null,
       "neighbourhood_cleansed": "De Baarsjes - Oud-West",
@@ -765,7 +782,9 @@
         "lon": 4.865594943841575,
         "lat": 52.36667871194905
       },
-      "features": ["Host Has Profile Pic"]
+      "features": [
+        "Host Has Profile Pic"
+      ]
     },
     {
       "id": "13465532",
@@ -947,7 +966,11 @@
       "host_neighbourhood": null,
       "host_listings_count": 0,
       "host_total_listings_count": 0,
-      "host_verifications": ["email", "phone", "reviews"],
+      "host_verifications": [
+        "email",
+        "phone",
+        "reviews"
+      ],
       "street": "Amsterdam, NH 1056, Netherlands",
       "neighbourhood": null,
       "neighbourhood_cleansed": "De Baarsjes - Oud-West",
@@ -1021,7 +1044,9 @@
         "lon": 4.853345068114508,
         "lat": 52.37080138742488
       },
-      "features": ["Host Has Profile Pic"]
+      "features": [
+        "Host Has Profile Pic"
+      ]
     },
     {
       "id": "7890890",
@@ -1072,7 +1097,12 @@
       "host_neighbourhood": "Oud-West",
       "host_listings_count": 1,
       "host_total_listings_count": 1,
-      "host_verifications": ["email", "phone", "reviews", "jumio"],
+      "host_verifications": [
+        "email",
+        "phone",
+        "reviews",
+        "jumio"
+      ],
       "street": "Oud-West, Amsterdam, Noord-Holland 1054, Netherlands",
       "neighbourhood": "Oud-West",
       "neighbourhood_cleansed": "De Baarsjes - Oud-West",
@@ -1206,7 +1236,12 @@
       "host_neighbourhood": "Oud-West",
       "host_listings_count": 2,
       "host_total_listings_count": 2,
-      "host_verifications": ["email", "phone", "reviews", "jumio"],
+      "host_verifications": [
+        "email",
+        "phone",
+        "reviews",
+        "jumio"
+      ],
       "street": "Oud-West, Amsterdam, Noord-Holland 1057, Netherlands",
       "neighbourhood": "Oud-West",
       "neighbourhood_cleansed": "De Baarsjes - Oud-West",
@@ -1296,16 +1331,7 @@
       "latitude": "23.18455079512732",
       "longitude": "3.795523257510883",
       "host_location": "Abalessa Algeria",
-      "id": 1
-    },
-    {
-      "cityName": "Mahidasht",
-      "country": "Iran (Islamic Republic of)",
-      "countryCode": "IR",
-      "latitude": "34.32869425037187",
-      "longitude": "46.724183117022086",
-      "host_location": "Mahidasht Iran (Islamic Republic of)",
-      "id": 4
+      "id": "1"
     },
     {
       "cityName": "Sanandaj",
@@ -1314,7 +1340,7 @@
       "latitude": "35.31372444726279",
       "longitude": "47.03114358752335",
       "host_location": "Sanandaj Iran (Islamic Republic of)",
-      "id": 5
+      "id": "5"
     },
     {
       "cityName": "A Dakhla Oasis",
@@ -1323,7 +1349,7 @@
       "latitude": "25.02090651422749",
       "longitude": "29.09059588509316",
       "host_location": "A Dakhla Oasis Egypt",
-      "id": 7
+      "id": "7"
     },
     {
       "cityName": "Baba Kot",
@@ -1332,7 +1358,169 @@
       "latitude": "28.43528783183169",
       "longitude": "67.78003711374224",
       "host_location": "Baba Kot Pakistan",
-      "id": 8
+      "id": "8"
+    },
+    {
+      "id": "77e3",
+      "cityName": "Malaya Zorkal’tseva",
+      "country": "Russian Federation (the)",
+      "countryCode": "RU",
+      "latitude": "58.44773280389084",
+      "longitude": "68.83515841412742",
+      "host_location": "Malaya Zorkal’tseva Russian Federation (the)"
+    },
+    {
+      "id": "7025",
+      "cityName": "Foggaret Ezzaou",
+      "country": "Algeria",
+      "countryCode": "DZ",
+      "latitude": "26.980828590472107",
+      "longitude": "4.1191730869113705",
+      "host_location": "Foggaret Ezzaou Algeria"
+    },
+    {
+      "id": "3ce1",
+      "cityName": "London",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "countryCode": "GB",
+      "latitude": "51.52391138610547",
+      "longitude": "-0.12875554304043083",
+      "host_location": "London United Kingdom of Great Britain and Northern Ireland (the)"
+    },
+    {
+      "id": "cebd",
+      "cityName": "Hamilton",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "countryCode": "GB",
+      "latitude": "55.727110085045986",
+      "longitude": "-3.673552198753465",
+      "host_location": "Hamilton United Kingdom of Great Britain and Northern Ireland (the)"
+    },
+    {
+      "id": "dd1c",
+      "cityName": "Orekhovo-Zuyevo",
+      "country": "Russian Federation (the)",
+      "countryCode": "RU",
+      "latitude": "55.62799595426723",
+      "longitude": "39.08936223164821",
+      "host_location": "Orekhovo-Zuyevo Russian Federation (the)"
+    },
+    {
+      "id": "697d",
+      "cityName": "Oualata",
+      "country": "Mauritania",
+      "countryCode": "MR",
+      "latitude": "19.228176737766262",
+      "longitude": "-7.741841239612185",
+      "host_location": "Oualata Mauritania"
+    },
+    {
+      "id": "e982",
+      "cityName": "Polstal",
+      "country": "Austria",
+      "countryCode": "AT",
+      "latitude": "47.39834920035926",
+      "longitude": "14.34222023242729",
+      "host_location": "Polstal Austria"
+    },
+    {
+      "id": "2a61",
+      "cityName": "Madrid",
+      "country": "Spain",
+      "countryCode": "ES",
+      "latitude": "40.42368991675518",
+      "longitude": "-3.7008657481862",
+      "host_location": "Madrid Spain"
+    },
+    {
+      "id": "15f4",
+      "cityName": "Hemsedal",
+      "country": "Norway",
+      "countryCode": "NO",
+      "latitude": "60.930432202923335",
+      "longitude": "8.609656336565102",
+      "host_location": "Hemsedal Norway"
+    },
+    {
+      "id": "0358",
+      "cityName": "Vestre Slidre",
+      "country": "Norway",
+      "countryCode": "NO",
+      "latitude": "61.05828537037916",
+      "longitude": "9.056575701177307",
+      "host_location": "Vestre Slidre Norway"
+    },
+    {
+      "id": "1eeb",
+      "cityName": "Bulgakovo",
+      "country": "Russian Federation (the)",
+      "countryCode": "RU",
+      "latitude": "52.908902047770255",
+      "longitude": "42.52023459141275",
+      "host_location": "Bulgakovo Russian Federation (the)"
+    },
+    {
+      "id": "a0d2",
+      "cityName": "Altinekin",
+      "country": "Turkiye",
+      "countryCode": "TR",
+      "latitude": "38.28993659801203",
+      "longitude": "32.890881990131575",
+      "host_location": "Altinekin Turkiye"
+    },
+    {
+      "id": "d141",
+      "cityName": "Tadmur",
+      "country": "Syrian Arab Republic (the)",
+      "countryCode": "SY",
+      "latitude": "34.452218472826566",
+      "longitude": "38.843077767918984",
+      "host_location": "Tadmur Syrian Arab Republic (the)"
+    },
+    {
+      "id": "d28b",
+      "cityName": "London",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "countryCode": "GB",
+      "latitude": "51.52604744889203",
+      "longitude": "-0.1268678490805253",
+      "host_location": "London United Kingdom of Great Britain and Northern Ireland (the)"
+    },
+    {
+      "id": "fcc1",
+      "cityName": "London",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "countryCode": "GB",
+      "latitude": "51.52337735475174",
+      "longitude": "-0.14042492388357755",
+      "host_location": "London United Kingdom of Great Britain and Northern Ireland (the)"
+    },
+    {
+      "id": "821b",
+      "cityName": "Inari",
+      "country": "Finland",
+      "countryCode": "FI",
+      "latitude": "68.43151284537514",
+      "longitude": "27.143135387811647",
+      "host_location": "Inari Finland"
+    },
+    {
+      "id": "5651",
+      "cityName": "Amsterdam",
+      "country": "Netherlands (Kingdom of the)",
+      "countryCode": "NL",
+      "latitude": "52.37895253000267",
+      "longitude": "4.856113370435718",
+      "host_location": "Amsterdam Netherlands (Kingdom of the)"
+    },
+    {
+      "id": "ee8e",
+      "cityName": "Amsterdam",
+      "country": "Netherlands (Kingdom of the)",
+      "countryCode": "NL",
+      "latitude": "52.365622755005454",
+      "longitude": "4.875574176331324",
+      "host_location": "Amsterdam Netherlands (Kingdom of the)"
     }
   ]
 }
