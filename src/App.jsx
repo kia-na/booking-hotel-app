@@ -19,7 +19,6 @@ import SingleBookmark from "./components/addBookmark/singleBookmark/SingleBookma
 function App() {
   return (
     <div className="font-josefin min-h-screen bg-gray-50">
-<<<<<<< HEAD
       <HotelsProvider>
         <Header />
         <Routes>
@@ -35,25 +34,6 @@ function App() {
           <Route path="/login" element={<Login />} />
         </Routes>
       </HotelsProvider>
-=======
-      <BookmarksProvider>
-        <HotelsProvider>
-          <Header />
-          <Routes>
-            <Route path="/" element={<LocationList />} />
-            <Route path="/hotels" element={<AppLayout />}>
-              <Route index element={<Hotels />} />
-              <Route path=":id" element={<SingleHotel />} />
-            </Route>
-            <Route path="bookmarks" element={<BookmarkLayout />}>
-              <Route index element={<BookmarkList />} />
-              <Route path=":id" element={<SingleBookmark />} />
-              <Route path="add" element={<AddBookmark />} />
-            </Route>
-          </Routes>
-        </HotelsProvider>
-      </BookmarksProvider>
->>>>>>> b6e470a30fa44e8c513a91708cb73db07ee60cbe
     </div>
   );
 }
