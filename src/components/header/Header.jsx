@@ -8,6 +8,7 @@ import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRange } from "react-date-range";
 import { format } from "date-fns";
 import {
+  Link,
   createSearchParams,
   useNavigate,
   useSearchParams,
@@ -46,12 +47,12 @@ function Header() {
 
   return (
     <div className="flex flex-col justify-center lg:flex-row items-center pt-4">
-      <span
-        className="mb-8 md:mr-3 lg:mb-0 cursor-pointer"
-        onClick={() => navigate("/")}
+      <Link
+        to={"/bookmarks"}
+        className="mb-8 md:mr-3 lg:mb-0 cursor-pointer hover:text-blue-800 hover:scale-110 transition-all duration-200"
       >
-        Home
-      </span>
+        Bookmarks
+      </Link>
       <div className="w-full max-w-[64rem]  lg:w-[80%] xl:min-w-[59rem] xl:w-[60%] min-h-[5rem] rounded-[1.7rem] lg:border-[1px] border-gray-200 flex flex-col sm:flex-row gap-2 md:gap-5 items-center justify-between px-7">
         <span className="w-[100%] sm:w-[50%] flex justify-start gap-2 py-2">
           <IoLocationSharp className="text-red-600 text-3xl" />
@@ -119,6 +120,12 @@ function Header() {
           </span>
         </span>
       </div>
+      <Link
+        to={"/login"}
+        className="mb-8 md:ml-3 lg:mb-0 cursor-pointer hover:text-blue-800 hover:scale-110 transition-all duration-200"
+      >
+        Login
+      </Link>
     </div>
   );
 }
