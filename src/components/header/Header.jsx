@@ -1,6 +1,8 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { IoLocationSharp } from "react-icons/io5";
 import { HiCalendar } from "react-icons/hi";
+import { MdLogout } from "react-icons/md";
 import { IoSearch } from "react-icons/io5";
 import DropDown from "../DropDown/DropDown";
 import "react-date-range/dist/styles.css"; // main style file
@@ -14,6 +16,7 @@ import {
   useSearchParams,
 } from "react-router-dom";
 import { data } from "autoprefixer";
+import { useAuth } from "../context/AuthContext";
 
 const separatorCSS = "hidden sm:inline border-l-[1px] h-[2rem] border-gray-400";
 
@@ -45,14 +48,20 @@ function Header() {
 
   const [openDate, setOpenDate] = useState(false);
 
+  //AUTH
+  const { user, isAuthenticated } = useAuth();
+
+  function handleBookmark() {
+    isAuthenticated ? navigate("/bookmarks") : navigate("/login");
+  }
   return (
     <div className="flex flex-col justify-center lg:flex-row items-center pt-4">
-      <Link
-        to={"/bookmarks"}
+      <span
+        onClick={handleBookmark}
         className="mb-8 md:mr-3 lg:mb-0 cursor-pointer hover:text-blue-800 hover:scale-110 transition-all duration-200"
       >
         Bookmarks
-      </Link>
+      </span>
       <div className="w-full max-w-[64rem]  lg:w-[80%] xl:min-w-[59rem] xl:w-[60%] min-h-[5rem] rounded-[1.7rem] lg:border-[1px] border-gray-200 flex flex-col sm:flex-row gap-2 md:gap-5 items-center justify-between px-7">
         <span className="w-[100%] sm:w-[50%] flex justify-start gap-2 py-2">
           <IoLocationSharp className="text-red-600 text-3xl" />
@@ -120,14 +129,31 @@ function Header() {
           </span>
         </span>
       </div>
-      <Link
-        to={"/login"}
-        className="mb-8 md:ml-3 lg:mb-0 cursor-pointer hover:text-blue-800 hover:scale-110 transition-all duration-200"
-      >
-        Login
-      </Link>
+      <span className="mb-8 md:ml-3 lg:mb-0">
+        {isAuthenticated ? (
+          <UserName name={user.name} />
+        ) : (
+          <Link
+            to={"/login"}
+            className="cursor-pointer  hover:text-blue-800 hover:scale-110 transition-all duration-200"
+          >
+            Login
+          </Link>
+        )}
+      </span>
     </div>
   );
 }
 
 export default Header;
+
+function UserName({ name }) {
+  const { logout } = useAuth();
+
+  return (
+    <span className="flex items-center gap-2 justify-start">
+      <span className="">{name}</span>
+      <MdLogout className="text-red-600 cursor-pointer" onClick={logout} />
+    </span>
+  );
+}
