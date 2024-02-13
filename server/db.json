@@ -1334,15 +1334,6 @@
       "id": "1"
     },
     {
-      "cityName": "Mahidasht",
-      "country": "Iran (Islamic Republic of)",
-      "countryCode": "IR",
-      "latitude": "34.32869425037187",
-      "longitude": "46.724183117022086",
-      "host_location": "Mahidasht Iran (Islamic Republic of)",
-      "id": "4"
-    },
-    {
       "cityName": "Sanandaj",
       "country": "Iran (Islamic Republic of)",
       "countryCode": "IR",
@@ -1442,15 +1433,6 @@
       "host_location": "Madrid Spain"
     },
     {
-      "id": "a8c4",
-      "cityName": "London",
-      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
-      "countryCode": "GB",
-      "latitude": "51.52807661572529",
-      "longitude": "-0.13407540783657357",
-      "host_location": "London United Kingdom of Great Britain and Northern Ireland (the)"
-    },
-    {
       "id": "15f4",
       "cityName": "Hemsedal",
       "country": "Norway",
@@ -1478,15 +1460,6 @@
       "host_location": "Bulgakovo Russian Federation (the)"
     },
     {
-      "id": "0ba0",
-      "cityName": "Gulsehir",
-      "country": "Turkiye",
-      "countryCode": "TR",
-      "latitude": "38.77121637244273",
-      "longitude": "34.71604619329989",
-      "host_location": "Gulsehir Turkiye"
-    },
-    {
       "id": "a0d2",
       "cityName": "Altinekin",
       "country": "Turkiye",
@@ -1512,6 +1485,42 @@
       "latitude": "51.52604744889203",
       "longitude": "-0.1268678490805253",
       "host_location": "London United Kingdom of Great Britain and Northern Ireland (the)"
+    },
+    {
+      "id": "fcc1",
+      "cityName": "London",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "countryCode": "GB",
+      "latitude": "51.52337735475174",
+      "longitude": "-0.14042492388357755",
+      "host_location": "London United Kingdom of Great Britain and Northern Ireland (the)"
+    },
+    {
+      "id": "821b",
+      "cityName": "Inari",
+      "country": "Finland",
+      "countryCode": "FI",
+      "latitude": "68.43151284537514",
+      "longitude": "27.143135387811647",
+      "host_location": "Inari Finland"
+    },
+    {
+      "id": "5651",
+      "cityName": "Amsterdam",
+      "country": "Netherlands (Kingdom of the)",
+      "countryCode": "NL",
+      "latitude": "52.37895253000267",
+      "longitude": "4.856113370435718",
+      "host_location": "Amsterdam Netherlands (Kingdom of the)"
+    },
+    {
+      "id": "ee8e",
+      "cityName": "Amsterdam",
+      "country": "Netherlands (Kingdom of the)",
+      "countryCode": "NL",
+      "latitude": "52.365622755005454",
+      "longitude": "4.875574176331324",
+      "host_location": "Amsterdam Netherlands (Kingdom of the)"
     }
   ]
 }
