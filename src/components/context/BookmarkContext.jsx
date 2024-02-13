@@ -15,7 +15,7 @@ export default function BookmarksProvider({ children }) {
       setIsLoading(true);
       try {
         const { data } = await axios.get(BASE_URL);
-        console.log(data);
+        // console.log(data);
         setBookmarksData(data);
         setIsLoading(false);
       } catch (error) {
